@@ -1,4 +1,4 @@
-package com.example.accessingdatamysql;
+package com.example.holacodespace;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
