@@ -1,8 +1,11 @@
 package com.example.holacodespace;
 
+import java.lang.String;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+@RestController
 @RequestMapping(path="/hola")
 public class controller {
     @GetMapping(path="/mundo")
