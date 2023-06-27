@@ -69,11 +69,11 @@ public class ApiController {
 	}
 
 
-	//@GetMapping(path="/get/report")
-	//public @ResponseBody List<Map<String, Object>> getReport() {
-	//	List<Map<String, Object>> queryResult = jdbcTemplate.queryForList("SELECT CONCAT(name, ' ==> ', email) as mycol FROM user");
-	//	return queryResult;
-	//}
+	@GetMapping(path="/get/report")
+	public @ResponseBody List<Map<String, Object>> getReport() {
+		List<Map<String, Object>> queryResult = jdbcTemplate.queryForList("SELECT CONCAT(name, ' ==> ', email) as mycol FROM user");
+		return queryResult;
+	}
 
 
 }
